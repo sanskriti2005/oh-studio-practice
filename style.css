@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+/* NAVBAR CSS */
+.navbar {
+    /* border: 1px solid black; */
+    display: flex;
+    gap: 20px;
+    width: 400px;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 4px;
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color: rgba(170, 170, 170, 0.2);
+}
+.nav-ele{
+    border-radius: 20px;
+    width: 140px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-ele a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+.nav-ele:focus{
+    background-color: white;
+}
+
+/* INTRO SECTION CSS */
+.intro-section {
+    text-align: center;
+}
+
+.expertise {
+    border: 1px solid black;
+    display: flex;
+    gap: 10px;
+    width: 325px;
+    margin: 0 auto;
+}
+
+/* PROJECTS SECTION */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px 10px;
+}
+
+.project-ele {
+    text-decoration: none;
+    height: 400px;
+    width: 600px;
+    background-image: url(./christmas-cookies.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.project-ele:nth-child(1) {
+    background-image: url(./flowers-on-a-mountain.jpg);
+}
+
+.project-ele>div {
+    display: none;
+}
+
+.project-ele:hover>div {
+    display: unset;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border: 1px solid white;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.project-ele:hover>div p {
+    padding: 20px;
+    font-weight: 500;
+}
+
+.project-ele:hover>div div {
+    padding: 20px;
+}
+
+/* CONTANCTS SECTION CSS */
